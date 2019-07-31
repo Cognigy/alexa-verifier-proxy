@@ -9,7 +9,7 @@ module.exports = async function fetchCert(options, callback) {
     const url = options.url;
     const cache = options.cache || globalCache;
     const cachedResponse = cache[url.href];
-    const servedFromCache = false;
+    let servedFromCache = false;
 
     if (cachedResponse) {
         servedFromCache = true;
@@ -30,7 +30,7 @@ module.exports = async function fetchCert(options, callback) {
         });
 
         if (!response || 200 !== response.statusCode) {
-            statusCode = response ? response.statusCode : 0;
+            const statusCode = response ? response.statusCode : 0;
             return callback('Failed to download certificate at: ' + url.href + '. Response code: ' + statusCode);
         }
 

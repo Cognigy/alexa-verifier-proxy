@@ -23,7 +23,7 @@
   "dependencies": {
     "node-forge": "^0.7.0",
     "request-promise": "^4.2.4",
-    "validator": "^9.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nock": "^9.0.2",

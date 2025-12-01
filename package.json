@@ -1,11 +1,11 @@
 {
-  "name": "alexa-verifier-proxy",
+  "name": "@cognigy-internal/alexa-verifier-proxy",
   "version": "0.0.6",
   "description": "Verify HTTP requests sent to an Alexa skill are sent from Amazon.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/monty0157/alexa-verifier-proxy"
+    "url": "https://github.com/cognigy/alexa-verifier-proxy"
   },
   "keywords": [
     "alexa",
